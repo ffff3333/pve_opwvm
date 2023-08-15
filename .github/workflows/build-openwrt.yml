@@ -10,7 +10,7 @@
 
 name: Build OpenWrt
 
-#on:
+on:
   #schedule:
    #- cron: 0 20 * * 5
 
