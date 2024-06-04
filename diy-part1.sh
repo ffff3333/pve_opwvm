@@ -23,4 +23,5 @@ echo 'src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall-packages' 
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
-echo 'src-git kenzo https://github.com/ffff3333/packages' >>feeds.conf.default
+echo 'src-git themes https://github.com/ffff3333/themes' >>feeds.conf.default
+echo 'src-git adguardhome https://github.com/ffff3333/adguardhome' >>feeds.conf.default
