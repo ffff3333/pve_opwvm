@@ -168,8 +168,6 @@ CONFIG_PCRE2_JIT_ENABLED=y
 CONFIG_QCOW2_IMAGES=y
 CONFIG_REPRODUCIBLE_DEBUG_INFO=y
 CONFIG_RUBY_ENABLE_YJIT=y
-# CONFIG_SDK is not set
-# CONFIG_SDK_LLVM_BPF is not set
 CONFIG_SING_BOX_BUILD_ACME=y
 CONFIG_SING_BOX_BUILD_CLASH_API=y
 CONFIG_SING_BOX_BUILD_ECH=y
@@ -184,6 +182,8 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
+# CONFIG_SDK is not set
+# CONFIG_SDK_LLVM_BPF is not set
 # CONFIG_VDI_IMAGES is not set
 # CONFIG_VHDX_IMAGES is not set
 # CONFIG_VMDK_IMAGES is not set
