@@ -15,6 +15,6 @@
 # Add a feed source
 sed -i '1i packages https://github.com/ffff3333/packages' feeds.conf.default
 #sed -i '2i src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall-packages' feeds.conf.default
-#sed -i '3i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '3i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '4i src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
 sed -i '5i src-git themes https://github.com/flrz/openwrt-themes' feeds.conf.default
