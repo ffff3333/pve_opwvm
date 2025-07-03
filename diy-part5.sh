@@ -14,8 +14,10 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
 #sed -i '1i src-git passwall_packages https://github.com/ffff3333/openwrt-passwall-packages' feeds.conf.default
-sed -i '1i src-git passwall_packages https://github.com/ffff3333/packages_updated' feeds.conf.default
+#sed -i '1i src-git passwall_packages https://github.com/ffff3333/packages_updated' feeds.conf.default
 #sed -i '2i src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall-packages' feeds.conf.default
-sed -i '3i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '4i src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
-sed -i '5i src-git themes https://github.com/ffff3333/themes' feeds.conf.default
+#sed -i '3i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+#sed -i '4i src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
+#sed -i '5i src-git themes https://github.com/ffff3333/themes' feeds.conf.default
+sed -i '1i src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '2i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
