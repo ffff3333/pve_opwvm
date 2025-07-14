@@ -23,4 +23,4 @@ sed -i '2i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds
 #sed -i '2i src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '3i src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
 sed -i '4i src-git themes https://github.com/ffff3333/openwrt_themes' feeds.conf.default
-#sed -i '5i src-git adguardhome https://github.com/flrz/adguardhome' >>feeds.conf.default
+sed -i '5i src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
