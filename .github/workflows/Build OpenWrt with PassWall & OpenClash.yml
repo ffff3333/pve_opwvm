@@ -41,6 +41,8 @@ jobs:
         echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> $FEEDS_CONF
         # Add OpenClash feed
         echo "src-git openclash https://github.com/vernesong/OpenClash.git;dev" >> $FEEDS_CONF
+        # Add Argon feed
+        echo "src-git Argon https://github.com/ffff3333/Argon.git;dev" >> $FEEDS_CONF
 
     - name: Update feeds
       run: |
