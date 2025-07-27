@@ -40,7 +40,7 @@ jobs:
         echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> $FEEDS_CONF
         echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> $FEEDS_CONF
         # Add luci-theme-argon feed
-        echo "src-git luci-theme-argon https://github.com/jerrykuku/luci-theme-argon.git;main" >> $FEEDS_CONF
+        echo "src-git argon https://github.com/ffff3333/Argon.git;main" >> $FEEDS_CONF
         # Add OpenClash feed
         echo "src-git openclash https://github.com/vernesong/OpenClash.git;dev" >> $FEEDS_CONF
 
