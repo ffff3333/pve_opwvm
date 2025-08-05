@@ -19,6 +19,7 @@
 #sudo apt install build-essential clang flex bison g++ gawk \
 #gcc-multilib g++-multilib gettext git libncurses-dev libssl-dev \
 #python3-distutils python3-setuptools rsync swig unzip zlib1g-dev file wget
+#sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
 # Add a feed source
 #sed -i '1i src-git immortalwrt_packages https://github.com/immortalwrt/packages' feeds.conf.default
 #sed -i '1i src-git passwall_packages https://github.com/ffff3333/openwrt-passwall-packages' feeds.conf.default
