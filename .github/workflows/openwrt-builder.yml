@@ -85,10 +85,6 @@ jobs:
         cd openwrt
         ./scripts/feeds update -a
         
-        # 更新 golang 1.24 版本
-        rm -rf feeds/packages/lang/golang
-        git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
-
     - name: Install feeds
       run: |
         cd openwrt
@@ -102,6 +98,14 @@ jobs:
         # rm -rf feeds/luci/applications/luci-app-passwall
         # git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci  
 
+    - name: Applying the patch
+      run: |
+        cd openwrt
+        # 更新 golang 1.24 版本
+        rm -rf feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+        # fixed rust host build erro
+        sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile 
 
     - name: Load custom configuration
       run: |
