@@ -1,7 +1,7 @@
 #
-# Openwrt with passwall2 and openclash
+# lede with passwall and openclash
 
-name: Openwrt Builder
+name: Lede Builder
 
 on:
   repository_dispatch:
