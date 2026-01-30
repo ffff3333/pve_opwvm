@@ -86,7 +86,7 @@ jobs:
         cp -r temp_resp/lang/rust feeds/packages/lang
         rm -rf temp_resp
 
-        git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp
+        git clone -b main --single-branch https://github.com/coolsnowwolf/packages.git temp_resp
         cp -f temp_resp/scripts/patch-kernel.sh scripts/
         rm -rf temp_resp
 
