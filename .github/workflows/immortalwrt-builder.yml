@@ -1,7 +1,7 @@
 #
 # Openwrt with passwall and openclash
 
-name: Openwrt Builder
+name: immortalwrt Builder
 
 on:
   repository_dispatch:
@@ -10,7 +10,7 @@ on:
     - cron: 0 10 * * 6
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -183,7 +183,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: ImmortalWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
