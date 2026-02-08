@@ -1,7 +1,7 @@
 #
 # Openwrt with passwall and openclash
 
-name: immortalwrt Builder
+name: Immortalwrt Builder
 
 on:
   repository_dispatch:
