@@ -15,7 +15,7 @@
 #sed -i 's/src-git packages https:\/\/github.com\/openwrt\/packages.git/src-git packages https:\/\/github.com\/immortalwrt\/packages.git/g' feeds.conf.default
 # Add a feed source
 sed -i '1i src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
-sed -i '2i src-git golang https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang' feeds.conf.default
+#sed -i '2i src-git golang https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang' feeds.conf.default
 #sed -i '3i src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki' feeds.conf.default
 #sed -i '1i src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '1i src-git flrz https://github.com/flrz/openwrt-packages' feeds.conf.default
