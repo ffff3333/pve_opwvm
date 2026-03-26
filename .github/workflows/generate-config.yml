@@ -29,6 +29,7 @@ jobs:
         cd immortalwrt
         rm -f .config
 
+        # heredoc 必须顶格写
 cat > immortalwrt/.config << "EOF"
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
@@ -41,6 +42,7 @@ EOF
     - name: Apply Unified Config Fragment
       run: |
 
+# heredoc 必须顶格写
 cat >> immortalwrt/.config << "EOF"
 
 # ===========================
