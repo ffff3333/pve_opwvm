@@ -38,18 +38,18 @@ jobs:
 
         if [ "${{ matrix.target }}" = "x86_64" ]; then
           cat > .config << "EOF"
-CONFIG_TARGET_x86=y
-CONFIG_TARGET_x86_64=y
-CONFIG_TARGET_x86_64_DEVICE_generic=y
-EOF
+        CONFIG_TARGET_x86=y
+        CONFIG_TARGET_x86_64=y
+        CONFIG_TARGET_x86_64_DEVICE_generic=y
+        EOF
         fi
 
         if [ "${{ matrix.target }}" = "rockchip_armv8" ]; then
           cat > .config << "EOF"
-CONFIG_TARGET_rockchip=y
-CONFIG_TARGET_rockchip_armv8=y
-CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
-EOF
+        CONFIG_TARGET_rockchip=y
+        CONFIG_TARGET_rockchip_armv8=y
+        CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
+        EOF
         fi
 
         make defconfig
@@ -59,12 +59,12 @@ EOF
         cd immortalwrt
         cat >> .config << "EOF"
 
-# ===========================
-# 统一版 CONFIG 片段开始
-# ===========================
+    # ===========================
+    # 统一版 CONFIG 片段开始
+    # ===========================
 
-# RootFS
-CONFIG_TARGET_ROOTFS_SQUASHFS=y
+    # RootFS
+       CONFIG_TARGET_ROOTFS_SQUASHFS=y
 CONFIG_TARGET_ROOTFS_PARTSIZE=1024
 CONFIG_TARGET_KERNEL_PARTSIZE=256
 
