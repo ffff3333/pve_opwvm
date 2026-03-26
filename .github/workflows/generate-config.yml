@@ -29,21 +29,22 @@ jobs:
         cd immortalwrt
         rm -f .config
 
-        # heredoc 必须顶格写
-cat > immortalwrt/.config << "EOF"
+    - name: Write Base Config (heredoc)
+      run: |
+        cat > immortalwrt/.config << "EOF"
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
 EOF
 
+    - name: Defconfig
+      run: |
         cd immortalwrt
         make defconfig
 
-    - name: Apply Unified Config Fragment
+    - name: Apply Unified Config Fragment (heredoc)
       run: |
-
-# heredoc 必须顶格写
-cat >> immortalwrt/.config << "EOF"
+        cat >> immortalwrt/.config << "EOF"
 
 # ===========================
 # 统一版 CONFIG 片段开始
