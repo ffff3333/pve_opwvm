@@ -31,7 +31,7 @@ jobs:
 
     - name: Clone Source
       run: |
-        git clone -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git
+        git clone -b openwrt-24.10 https://github.com/immortalwrt/immortalwrt.git
         cd immortalwrt
 
         echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages" >> feeds.conf.default
